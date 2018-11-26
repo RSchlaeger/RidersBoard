@@ -1,0 +1,7 @@
+<p class="header">
+   {{actualDate | date:'dd.MM.yyyy'}}
+</p>
+<div  class="entry" *ngFor="let i of [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]">
+  <app-entry [hour]=i></app-entry>
+
+</div>

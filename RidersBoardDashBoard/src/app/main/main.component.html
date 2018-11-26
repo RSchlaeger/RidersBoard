@@ -1,0 +1,9 @@
+<p>
+  {{today | date:'dd.MM.yyyy'}}
+</p>
+
+<div class="day-wrapper">
+  <div  class="day" *ngFor="let i of  [0,1,2,3,4,5,6];">
+    <app-day [date]=i></app-day>
+  </div>
+</div>
