@@ -2,8 +2,26 @@
   {{today | date:'dd.MM.yyyy'}}
 </p>
 
-<div class="day-wrapper">
-  <div  class="day" *ngFor="let i of  [0,1,2,3,4,5,6];">
-    <app-day [date]=i></app-day>
+<div class="wrapper">
+  <!-- <div class="day-wrapper">
+    <div class="day" *ngFor="let i of  [0,1,2,3,4,5,6];">
+      <app-day [date]=i></app-day>
+    </div>
+  </div> -->
+
+  <div class="card-wrapper">
+    <gridster [options]="options">
+      <gridster-item [item]="item" *ngFor="let item of dashboard">
+        <!-- your content here -->
+        <app-card [header]="header" [content]="Clock" [type]="1"></app-card>
+      </gridster-item>
+    </gridster>
+
+
+
+    <!-- <div class="card" *ngFor="let card of cards; let i = index">
+      <app-card [header]="card.header" [content]="card.content" [type]="card.type"></app-card>
+    </div> -->
   </div>
+
 </div>

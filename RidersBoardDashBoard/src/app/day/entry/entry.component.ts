@@ -7,7 +7,9 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class EntryComponent implements OnInit {
 
-  @Input() hour :number;
+  @Input() hour: number;
+  @Input() entry?: string = "";
+
   constructor() { }
 
   ngOnInit() {

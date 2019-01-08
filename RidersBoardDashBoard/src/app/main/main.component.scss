@@ -1,9 +1,54 @@
 
-.day-wrapper {
-    display:flex;
+.wrapper {
+    // display: flex;
 }
+
+.day-wrapper {
+    flex: 1;
+    width: 50%;
+    display: flex;
+}
+
 .day {
-    flex:1;
-    height: 100vh;
+    // flex:1;
+    // height: 100vh;
     border: 1px solid #000;
 }
+
+.card-wrapper {
+    margin-left: 1%;
+    // flex: 1;
+    // width: 500px;
+    height: 100vh;
+    // float: right;
+
+   
+}
+gridster-item {
+    height: 200px !important;
+}
+
+
+.cdk-drag-preview {
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+                0 8px 10px 1px rgba(0, 0, 0, 0.14),
+                0 3px 14px 2px rgba(0, 0, 0, 0.12);
+  }
+  
+  .cdk-drag-placeholder {
+    opacity: 0;
+  }
+  
+  .cdk-drag-animating {
+    transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+  }
+  
+  .card:last-child {
+    border: none;
+  }
+  
+  .card-wrapper.cdk-drop-list-dragging .cad:not(.cdk-drag-placeholder) {
+    transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+  }

@@ -1,0 +1,14 @@
+<div class="wrapper">
+  <div class="heading">
+    {{header}}
+  </div>
+
+  <div class="content">
+    <span *ngIf="type === 1">
+      {{content | date:'dd.MM.yyy hh:mm:ss'}}
+    </span>
+    <span *ngIf="type != 1">
+      {{content}}
+    </span>
+  </div>
+</div>
